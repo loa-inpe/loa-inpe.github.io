@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	
+	<meta charset="utf-8">
+	<title>Laboratório de Estudos do Oceano e da Atmosfera</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<link rel="shortcut icon" href="images/ocean.ico">
+    
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+    
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+
+	<!-- Academicicons -->	
+	<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+	<!-- SCRIPTS -->
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if IE]><html class="ie" lang="en"> <![endif]-->
+	
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+	<script src="js/superfish.min.js" type="text/javascript"></script>
+	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="js/owl.carousel.js" type="text/javascript"></script>
+	<script src="js/animate.js" type="text/javascript"></script>
+	<script src="js/jquery.BlackAndWhite.js"></script>
+	<script src="js/myscript.js" type="text/javascript"></script>
+	
+	<script>
+		
+		//PrettyPhoto
+		jQuery(document).ready(function() {
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+		
+		//BlackAndWhite
+		$(window).load(function(){
+			$('.client_img').BlackAndWhite({
+				hoverEffect : true, // default true
+				// set the path to BnWWorker.js for a superfast implementation
+				webworkerPath : false,
+				// for the images with a fluid width and height 
+				responsive:true,
+				// to invert the hover effect
+				invertHoverEffect: false,
+				// this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+				intensity:1,
+				speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+					fadeIn: 300, // 200ms for fadeIn animations
+					fadeOut: 300 // 800ms for fadeOut animations
+				},
+				onImageReady:function(img) {
+					// this callback gets executed anytime an image is converted
+				}
+			});
+		});
+		
+	</script>
+	
+</head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MEX5MEP51V"></script>
+<script>
+	  window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MEX5MEP51V');
+</script>
+
+<body>
+
+<!-- PRELOADER -->
+<img id="preloader" src="images/preloader.gif" alt="" />
+<!-- //PRELOADER -->
+<div class="preloader_hide">
+
+	<!-- PAGE -->
+	<div id="page">
+	
+		<!-- HEADER -->
+		<header>
+			
+			<!-- MENU BLOCK -->
+			<div class="menu_block">
+			
+				<!-- CONTAINER -->
+				<div class="container clearfix">
+					
+					<!-- LOGO -->
+					<div class="logo pull-left">
+					</div><!-- //LOGO -->
+					
+					<!-- SEARCH FORM -->
+					<div id="search-form" class="pull-right">
+						<form id="search-form" class="pull-right">
+							<input type="text" name="Search" value="Buscar" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
+						</form>
+					</div><!-- SEARCH FORM -->
+					
+					<!-- MENU -->
+					<div class="pull-right">
+						<nav class="navmenu center">
+							<ul>
+								<li class="first active scroll_btn"><a href="index.html" >Home</a></li>
+								<li class="scroll_btn"><a href="about.html" >Sobre</a></li>
+								<li class="sub-menu">
+									<a href="projects.html" >Projetos</a>
+									<ul>
+										<li><a href="atmos.html" >ATMOS</a></li>
+										<li><a href="interconf.html" >INTERCONF</a></li>
+										<li><a href="inct.html" >INCT da Criosfera</a></li>
+										<li><a href="cdm.html" >Ciências do Mar</a></li>
+										<li><a href="modbio.html" >Modelagem Biofísica</a></li>	
+										<li><a href="goal.html" >GOAL</a></li>			
+										<li><a href="http://dgp.cnpq.br/dgp/espelhogrupo/5350809461630125" >DGP Lattes - CNPq</a></li>									
+									</ul>
+								<li class="sub-menu">
+									<a href="about.html#team" >Equipe</a>
+									<ul>
+										<li><a href="about.html#researchers" >Pesquisadores</a></li>
+										<li><a href="about.html#collaborators" >Colaboradores</a></li>										
+										<li><a href="about.html#graduates" >Bolsistas e Pós-graduandos</a></li>	
+										<li><a href="alumni.html" >Alumni</a></li>																		
+									</ul>
+								<li class="scroll_btn"><a href="news.html" >Notícias</a></li>
+								<li class="scroll_btn"><a href="publications.html" >Publicações</a></li>
+								<li class="scroll_btn"><a href="clipping.html" >Divulgação</a></li>
+								<li class="scroll_btn"><a href="#contacts" >Contato</a></li>								
+							</ul>
+						</nav>
+					</div><!-- //MENU -->
+				</div><!-- //MENU BLOCK -->
+			</div><!-- //CONTAINER -->
+		</header><!-- //HEADER -->
+		
+		
+		<!-- HOME -->
+		<section id="home" class="padbot0">
+				
+			<!-- TOP SLIDER -->
+			<div class="flexslider top_slider">
+				<ul class="slides">
+					<li class="slide1">
+						<div class="flex_caption1">
+							<b><p class="title1 captionDelay2 FromTop">LOA - INPE</p>
+							<p class="title4 captionDelay7 FromBottom">Laboratório de Estudos do Oceano e da Atmosfera</p>
+							<p class="title4 captionDelay7 FromBottom">Divisão de Observação da Terra e Geoinformática</p>
+							<p class="title4 captionDelay7 FromBottom">Coordenação-Geral de Ciências da Terra </p>
+							<p class="title4 captionDelay7 FromBottom">Instituto Nacional de Pesquisas Espaciais</p>							
+						</div>
+						<a class="slide_btn FromRight" href="about.html" >Saiba mais</a>
+					<li class="slide2">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay2 FromTop">LOA - INPE</p>
+							<p class="title4 captionDelay7 FromBottom">Laboratório de Estudos do Oceano e da Atmosfera</p>
+							<p class="title4 captionDelay7 FromBottom">Divisão de Observação da Terra e Geoinformática</p>
+							<p class="title4 captionDelay7 FromBottom">Coordenação-Geral de Ciências da Terra</p>	
+							<p class="title4 captionDelay7 FromBottom">Instituto Nacional de Pesquisas Espaciais</p>						</div>
+						<a class="slide_btn FromRight" href="about.html" >Saiba mais</a>
+					</li>
+					<li class="slide3">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay2 FromTop">LOA - INPE</p>
+							<p class="title4 captionDelay7 FromBottom">Laboratório de Estudos do Oceano e da Atmosfera</p>
+							<p class="title4 captionDelay7 FromBottom">Divisão de Observação da Terra e Geoinformática</p>
+							<p class="title4 captionDelay7 FromBottom">Coordenação-Geral de Ciências da Terra</p>	
+							<p class="title4 captionDelay7 FromBottom">Instituto Nacional de Pesquisas Espaciais</p>						</div>
+						<a class="slide_btn FromRight" href="about.html" >Saiba mais</a></b>
+						
+					</li>
+				</ul>
+			</div>
+			<div id="carousel">
+				<ul class="slides">
+					<li><img src="images/slider/home3.png" alt="" /></li>
+					<li><img src="images/slider/home1.jpg" alt="" /></li>
+					<li><img src="images/slider/home2.jpg" alt="" /></li>
+				</ul>
+			</div><!-- //TOP SLIDER -->
+		</section><!-- //HOME -->
+		
+		
+		<!-- ABOUT -->
+		<section id="about">
+			
+			<!-- SERVICES -->
+			<div class="services_block" data-appear-top-offset="-200" data-animated="fadeInUp">
+				
+			
+			<!-- MULTI PURPOSE -->
+			<div class="purpose_block">
+				
+				<!-- CONTAINER -->
+				<div class="container">
+					
+					<!-- ROW -->
+					<div class="row">
+					
+						<div class="col-lg-7 col-md-7 col-sm-7" data-appear-top-offset="-200" data-animated="fadeInLeft">
+							<h2><b>Laboratório de Estudos do Oceano e da Atmosfera</b></h2>
+							<p>O Laboratório de Estudos do Oceano e da Atmosfera (LOA), do Instituto
+								Nacional de Pesquisas Espaciais (INPE), faz parte da Divisão de Observação da Terra e Geoinformática 
+								(DIOTG), vinculada à Coordenação-Geral de Ciências da Terra (CGCT) e está focado no estudo da 
+								física do oceano e atmosfera e da interação entre estes dois meios, 
+								além da modelagem biofísica</p>
+							<a class="btn" href="about.html" >Saiba mais</a>
+						</div>
+						
+						<div class="col-lg-5 col-md-5 col-sm-5 ipad_img_in" data-appear-top-offset="-200" data-animated="fadeInRight">
+							<img class="ipad_img1" src="images/logo.png" alt="" />
+						</div>
+					</div><!-- //ROW -->
+			</div>
+			</section>
+
+			<!-- //NEWS -->
+			<section id="news" class="margbot0">
+		
+				<!-- CONTAINER -->
+				<div class="container">
+						<h2><b>Últimas Notícias</b></h2>
+
+
+					<!-- RECENT POSTS -->
+					<div class="row recent_posts"  data-appear-top-offset="-200" data-animated="fadeInUp">
+						<div class="col-lg-4 col-md-4 col-sm-4 padbot30 post_item_block">
+							<div class="post_item">
+								<div class="post_item_img">
+									<img src="images/news/BOIAS_OPXL.jpg" alt="" />
+									<a class="link" href="atmos_boias_2021.html" ></a>
+								</div>
+								<div class="post_item_content">
+									<a class="title" href="atmos_boias_2021.html">Dados oceanográficos em tempo real - Parceria ATMOS e REMObs</a>
+									<ul class="post_item_inf">
+									</ul>
+								</div>
+							</div>
+						</div>
+					<div class="row recent_posts"  data-appear-top-offset="-200" data-animated="fadeInUp">
+						<div class="col-lg-4 col-md-4 col-sm-4 padbot30 post_item_block">
+							<div class="post_item">
+								<div class="post_item_img">
+									<img src="images/news/pezzi.jpeg" alt="" />
+									<a class="link" href="portosemercados.html" ></a>
+								</div>
+								<div class="post_item_content">
+									<a class="title" href="portosemercados.html">Manchete na Revista Portos e Mercados: "A bordo do "Tio Max", muita ciência e pesquisa"</a>
+									<ul class="post_item_inf">
+									</ul>
+								</div>
+							</div>
+						</div>
+					<div class="row recent_posts"  data-appear-top-offset="-200" data-animated="fadeInUp">
+						<div class="col-lg-4 col-md-4 col-sm-4 padbot30 post_item_block">
+							<div class="post_item">
+								<div class="post_item_img">
+									<img src="images/news/torre_OP_XL.jpeg" alt="" />
+									<a class="link" href="OP_XL.html" ></a>
+								</div>
+								<div class="post_item_content">
+									<a class="title" href="OP_XL.html">LOA na Operação Antártica Brasileira XL</a>
+									<ul class="post_item_inf">
+									</ul>
+								</div>
+							</div>
+						</div>
+
+
+						
+						
+					    </div><!-- RECENT POSTS -->
+				</div><!-- //CONTAINER -->
+			</section><!-- //NEWS -->
+
+		<section id="projects" class="padtop50">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+				<!-- ROW -->
+				<div class="projects-wrapper" data-appear-top-offset="-150" data-animated="fadeInUp">
+					<h2><b>Projetos</b></h2>
+					
+					<!-- TEAM SLIDER -->
+					<div class="owl-demo owl-carousel projects_slider ">
+				
+						<!-- crewman2 -->
+						<div class="item">
+							<div class="work_item">
+								<div class="work_img">
+									<a href="atmos.html"><img src="images/projects/logo_atmos.png" alt="" />
+								</div>
+								<div class="work_description center">
+									<div class="work_descr_cont">
+										<p>ATMOS</p>
+										<span>Antarctic Modeling Observation System</span>
+									</div>
+								</div>
+							</div>
+						</div><!-- crewman1 -->
+						
+						<!-- crewman2 -->
+						<div class="item">
+							<div class="work_item">
+								<div class="work_img">
+									<a href="interconf.html"><img src="images/projects/logo_interconf.png" alt="" />
+								</div>
+								<div class="work_description center">
+									<div class="work_descr_cont">
+										<p>INTERCONF</p>
+										<span>Interação Oceano-Atmosfera na Região da Confluência Brasil-Malvinas</span>
+									</div>
+								</div>
+							</div>
+						</div><!-- crewman1 -->
+						
+						<!-- crewman2 -->
+						<div class="item">
+							<div class="work_item">
+								<div class="work_img">
+									<a href="inct.html"><img src="images/projects/logo_inct.png" alt="" />
+								</div>
+								<div class="work_description center">
+									<div class="work_descr_cont">
+										<p>INCT da Criosfera</p>
+									</div>
+								</div>
+							</div>
+						</div><!-- crewman1 -->
+						
+					
+						<!-- crewman2 -->
+						<div class="item">
+							<div class="work_item">
+								<div class="work_img">
+									<a href="cdm.html"><img src="images/projects/logo_cdm.png" alt="" />
+								</div>
+								<div class="work_description center">
+									<div class="work_descr_cont">
+										<p>Ciências do Mar</p>
+									</div>
+								</div>
+							</div>
+						</div><!-- crewman1 -->
+
+					
+						<!-- crewman2 -->
+						<div class="item">
+							<div class="work_item">
+								<div class="work_img">
+									<a href="modbio.html"><img src="images/projects/logo_modbio.png" alt="" />
+								</div>
+								<div class="work_description center">
+									<div class="work_descr_cont">
+										<p>Modelagem Biofísica</p></a>
+
+									</div>
+								</div>
+							</div>
+						</div><!-- crewman1 -->
+
+						<!-- crewman2 -->
+						<div class="item">
+							<div class="work_item">
+								<div class="work_img">
+									<a href="modbio.html"><img src="images/projects/logo_goal.png" alt="" />
+								</div>
+								<div class="work_description center">
+									<div class="work_descr_cont">
+										<p>GOAL</p></a>
+										<span>Grupo de Oceanografia de Altas Latitudes</span>
+									</div>
+								</div>
+							</div>
+						</div><!-- crewman1 -->		
+
+						<!-- crewman2 -->
+						<div class="item">
+							<div class="work_item">
+								<div class="work_img">
+									<a href="dgp.cnpq.br/dgp/espelhogrupo/5350809461630125l"><img src="/images/projects/dgp.jpeg" alt="" />
+								</div>
+								<div class="work_description center">
+									<div class="work_descr_cont">
+										<p>DGP Lattes - CNPq</p></a>
+										<span>Diretório dos Grupos de Pesquisas no Brasil - Lattes</span>
+									</div>
+								</div>
+							</div>
+						</div><!-- crewman1 -->		
+					</div><!-- TEAM SLIDER -->
+				</div><!-- //ROW -->
+			</div><!-- //CONTAINER -->
+		</section><!-- //TEAM -->			
+	
+		<!-- TEAM -->
+		<section id="team">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+				<!-- ROW -->
+				<div class="projects-wrapper" data-appear-top-offset="-150" data-animated="fadeInUp">
+					<h2><b>Equipe</b></h2><a class="btn" href="about.html#researchers" >Conheça a equipe</a>
+					
+					<!-- TEAM SLIDER -->
+					<div class="owl-demo owl-carousel projects_slider">
+						<!-- crewman1 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/luciano.jpeg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Dr. Luciano Ponzi Pezzi</p>
+										<span>Professor Titular</span><p></p>
+										<span>Meteorologista</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="https://www.researchgate.net/profile/Luciano_Pezzi" ><i class="ai ai-researchgate"></i></a>
+									<a href="http://lattes.cnpq.br/9168878830863753" ><i class="ai ai-lattes"></i></a>
+									<a href="https://orcid.org/0000-0001-6016-4320" ><i class="ai ai-orcid"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman1 -->
+						
+						<!-- crewman2 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/douglas.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Dr. Douglas Francisco Marcolino Gherardi</p>
+										<span>Pesquisador</span><p></p>
+										<span>Oceanógrafo</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="https://www.researchgate.net/profile/Douglas_Gherardi" ><i class="ai ai-researchgate"></i></a>
+									<a href="http://lattes.cnpq.br/5421394642444587" ><i class="ai ai-lattes"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman1 -->
+						
+						<!-- crewman3 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/ronald.jpeg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Dr. Ronald Buss de Souza</p>
+										<span>Pesquisador Sênior</span><p></p>
+										<span>Oceanógrafo</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="https://www.researchgate.net/profile/Ronald_Souza" ><i class="ai ai-researchgate"></i></a>
+									<a href="http://lattes.cnpq.br/0537824080913130" ><i class="ai ai-lattes"></i></a>
+									<a href="https://orcid.org/0000-0003-3346-337" ><i class="ai ai-orcid"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman3 -->
+						<!-- crewman5 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/joao.jpeg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Dr. João A. Lorenzzetti</p>
+										<span>Pesquisador Titular</span><p></p>
+										<span>Oceanógrafo</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="http://lattes.cnpq.br/3852581196429739" ><i class="ai ai-lattes"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<!-- crewman4 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/jonas.gif" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Dr. Jonas Takeo Carvalho</p>
+										<span>Pós-doutorando e pesquisador</span><p></p>
+										<span>Oceanógrafo</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="https://www.researchgate.net/profile/Jonas_Carvalho" ><i class="ai ai-researchgate"></i></a>
+									<a href="http://lattes.cnpq.br/8827254187143196" ><i class="ai ai-lattes"></i></a>
+									<a href="https://orcid.org/0000-0002-1225-3457" ><i class="ai ai-orcid"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman4 -->
+						
+						<!-- crewman5 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/marcelo.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Dr. Marcelo Freitas Santini</p>
+										<span>Pós-doutorando e pesquisador</span><p></p>
+										<span>Meteorologista</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="https://www.researchgate.net/profile/Marcelo_Santini" ><i class="ai ai-researchgate"></i></a>
+									<a href="http://lattes.cnpq.br/9105488365512364" ><i class="ai ai-lattes"></i></a>
+									<a href="https://orcid.org/0000-0002-6760-2247" ><i class="ai ai-orcid"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman5 -->
+						
+						<!-- crewman6 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/claudia.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Dra. Claudia Klose Parise</p>
+										<span>Colaboradora</span><p></p>
+										<span>Oceanógrafa</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="https://www.researchgate.net/profile/Claudia_Parise" ><i class="ai ai-researchgate"></i></a>
+									<a href="http://lattes.cnpq.br/2544079218003502" ><i class="ai ai-lattes"></i></a>
+									<a href="https://orcid.org/0000-0002-9466-788X" ><i class="ai ai-orcid"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman6 -->
+						
+						<!-- crewman7 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/leonardo.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Dr. Leonardo Nascimento Lima</p>
+										<span>Colaborador</span><p></p>
+										<span>Oceanógrafo</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+										<a href="http://lattes.cnpq.br/7758920363746942" ><i class="ai ai-lattes"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman7 -->
+
+						<!-- crewman7 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/mata.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Dr. Maurício Magalhães Mata</p>
+										<span>Colaborador</span><p></p>
+										<span>Oceanógrafo</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+										<a href="http://lattes.cnpq.br/4041211770858318" ><i class="ai ai-lattes"></i></a>
+										<a href="http://orcid.org/0000-0002-9028-8284" ><i class="ai ai-orcid"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman7 -->	
+						<!-- crewman7 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/mario.jpeg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Dr. Mário Fracisco Leal de Quadro</p>
+										<span>Colaborador</span><p></p>
+										<span>Meteorologista</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+										<a href="http://lattes.cnpq.br/4111514204790887" ><i class="ai ai-lattes"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman7 -->
+							<!-- crewman7 -->
+							<div class="item">
+								<div class="crewman_item">
+									<div class="crewman">
+										<img src="images/team/aravequia.jpg" alt="" />
+									</div>
+									<div class="crewman_descr center">
+										<div class="crewman_descr_cont">
+											<p>Dr. José Antonio Aravéquia</p>
+											<span>Colaborador</span><p></p>
+											<span>Físico</span>
+										</div>
+									</div>
+									<div class="crewman_social">
+											<a href="http://lattes.cnpq.br/4485209823374151" ><i class="ai ai-lattes"></i></a>
+											<a href="http://orcid.org/0000-0003-3498-4995" ><i class="ai ai-orcid"></i></a>
+									</div>
+								</div>
+							</div><!-- crewman7 -->	
+
+						
+						<!-- crewman7 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/RicardodeCamargo.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Dr. Ricardo de Camargo</p>
+										<span>Colaborador</span><p></p>
+										<span>Físico</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+										<a href="http://lattes.cnpq.br/4224364363630813" ><i class="ai ai-lattes"></i></a>
+										<a href="https://orcid.org/0000-0002-9425-5391" ><i class="ai ai-orcid"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman7 -->	
+
+						
+
+						<!-- crewman9 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/celina.gif" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>MSc. Celina C. F. Rodrigues</p>
+										<span>Doutoranda</span><p></p>
+										<span>Engenheira Ambiental</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="http://lattes.cnpq.br/1486257464725434" ><i class="ai ai-lattes"></i></a>
+									<a href="https://orcid.org/0000-0002-6872-1977" ><i class="ai ai-orcid"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman9 -->
+
+						<!-- crewman10 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/dayanis.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>MSc. Dayanis Monteiro</p>
+										<span>Doutoranda</span><p></p>
+										<span>Meteorologista</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+								</div>
+							</div>
+						</div><!-- crewman10 -->
+						<!-- crewman11 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/diogo.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>MSc. Diogo Machado Custodio</p>
+										<span>Doutorando</span><p></p>
+										<span>Meteorologista</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="https://www.researchgate.net/profile/Diogo_Custodio2" ><i class="ai ai-researchgate"></i></a>
+									<a href="http://lattes.cnpq.br/3049746878006545" ><i class="ai ai-lattes"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman11 -->						
+
+						
+
+						<!-- crewman12 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/luciana.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>MSc. Luciana Shigihara Lima</p>
+										<span>Doutoranda</span><p></p>
+										<span>Engenheira Hídrica</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="https://www.researchgate.net/profile/Luciana_Shigihara_Lima" ><i class="ai ai-researchgate"></i></a>
+									<a href="http://lattes.cnpq.br/7326228290528941" ><i class="ai ai-lattes"></i></a>
+									<a href="https://orcid.org/0000-0001-7988-0853" ><i class="ai ai-orcid"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman12 -->
+
+						<!-- crewman13 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/mylene.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>MSc. Mylene Jaen Cabrera</p>
+										<span>Doutoranda</span><p></p>
+										<span>Meteorologista</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="http://lattes.cnpq.br/1575145014336724" ><i class="ai ai-lattes"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman13 -->
+
+						
+						<!-- crewman15 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/lorena.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Lorena de M. J. Gomes</p>
+										<span>Mestranda</span><p></p>
+										<span>Engenheira Ambiental</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+								</div>
+							</div>
+						</div><!-- crewman15 -->
+
+						
+						<!-- crewman17 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/heitor.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Msc. Heitor Augusto de Moraes Tozzi</p>
+										<span>Doutorando</span><p></p>
+										<span>Oceanólogo</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="http://lattes.cnpq.br/5382070760447359" ><i class="ai ai-lattes"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman17 -->
+
+						<!-- crewman17 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/Emily.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Emily Aimée Alves Carnaúba</p>
+										<span>Mestranda</span><p></p>
+										<span>Cientista Ambiental</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="http://lattes.cnpq.br/5601470504970877" ><i class="ai ai-lattes"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman17 -->
+
+						<!-- crewman17 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/Gabby.JPG" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Gabrielle Tavares de Carvalho</p>
+										<span>Mestranda</span><p></p>
+										<span>Cientista Ambiental</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="http://lattes.cnpq.br/6244593403000776" ><i class="ai ai-lattes"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman17 -->
+
+						<!-- crewman17 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/Taina.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Taina Costa Maia</p>
+										<span>Mestranda</span><p></p>
+										<span>Oceanógrafa</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="http://lattes.cnpq.br/4583179306794404" ><i class="ai ai-lattes"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman17 -->
+						
+						
+					</div><!-- TEAM SLIDER -->
+				</div><!-- //ROW -->
+			</div><!-- //CONTAINER -->
+		</section><!-- //TEAM -->
+
+	</div><!-- //PAGE -->
+	
+	<!-- CONTACTS -->
+	<section id="contacts">
+	</section><!-- //CONTACTS -->
+	
+	<!-- FOOTER -->
+	<footer>
+			
+		<!-- CONTAINER -->
+		<div class="container">
+			
+			<!-- ROW -->
+			<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+				
+				<div class="col-lg-4 col-md-4 col-sm-6 padbot30">
+					<h4><b>Últimas</b> notícias</h4>
+					<div class="recent_posts_small clearfix">
+						<div class="post_item_img_small">
+							<img src="images/news/torre_OP_XL.jpeg" alt="" />
+						</div>
+						<div class="post_item_content_small">
+							<a class="title" href="OP_XL.html" >LOA na Operação Antártica Brasileira XL</a>
+							<ul class="post_item_inf_small">
+								<li>16 Novembro 2021</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="recent_posts_small clearfix">
+						<div class="post_item_img_small">
+							<img src="images/news/eddies.jpg" alt="" />
+						</div>
+						<div class="post_item_content_small">
+							<a class="title" href="artigo_eddies.html" >Nova produção científica:
+								 "Air-Sea Interactions over Eddies in the Brazil-Malvinas Confluence"</a>
+							<ul class="post_item_inf_small">
+								<li>10 Maio 2021</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="recent_posts_small clearfix">
+						<div class="post_item_img_small">
+							<img src="images/banners/banner5.png" alt="" />
+						</div>
+						<div class="post_item_content_small">
+							<a class="title" href="artigo_wave.html" >Nova produção científica do Projeto ATMOS, liderado pelo LOA: "Wave
+								Anomaly Detection in Wave Measurements"</a>
+							<ul class="post_item_inf_small">
+								<li>05 Março 2021</li>
+							</ul>
+						</div>
+					</div>
+					<div class="recent_posts_small clearfix">
+						<div class="post_item_img_small">
+							<img src="images/banners/banner4.png" alt="" />
+						</div>
+						<div class="post_item_content_small">
+							<a class="title" href="2_paper_cbm_rmets.html" >LOA/INPE publica artigo sobre as comparações dos fluxos de calor na 
+								CBM e Plataforma Sul Continental Brasileira</a>
+							<ul class="post_item_inf_small">
+								<li>22 Janeiro 2021</li>
+							</ul>
+						</div>
+					</div>
+					<div class="recent_posts_small clearfix">
+						<div class="post_item_img_small">
+							<img src="images/banners/banner3.png" alt="" />
+						</div>
+						<div class="post_item_content_small">
+							<a class="title" href="1_buoy_drake_currents.html" >Cinco boias lançadas pelo LOA/INPE na Passagem de Drake para 
+								estudar a dispersão de ondas e correntes</a>
+							<ul class="post_item_inf_small">
+								<li>16 Dezembro 2020</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-6 padbot30 foot_about_block">
+					<h4><b>Redes</b> sociais</h4>
+					<p>Visite nossa página para conhecer o nosso trabalho, atividades de pesquisa e a equipe do Laboratório de Estudos do Oceano e da Atmosfera.
+					</p>
+					<ul class="social">
+						<li><a href="https://www.facebook.com/loainpe" ><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.instagram.com/inpe_oceanography" ><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+				
+				<div class="respond_clear"></div>
+				
+				<div class="col-lg-4 col-md-4 padbot30">
+					<h4><b>Entre em</b> contato</h4>
+					
+					<!-- CONTACT FORM -->
+					<div class="span9 contact_form">
+						<div id="note"></div>
+						<div id="fields">
+							<form method="POST" action="https://formspree.io/xpvpnoax" id="contact-form-face" class="clearfix" action="#">
+								<input type="text" name="name" value="Nome" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+								<textarea name="message" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Mensagem';">Messagem</textarea>
+								<input class="contact_btn" type="submit" value="Enviar" />
+							</form>
+						</div>
+					</div><!-- //CONTACT FORM -->
+				</div>
+				<div id="copyright" style="text-align: center;">
+					&copy; LOA/INPE. All rights reserved. | Template design by: <a href="https://github.com/toidicode">toidicode</a> | Edited by:  <a href="https://www.uesleisutil.com.br">Ueslei Adriano Sutil</a> | Favicon by  <a href="https://www.flaticon.com/authors/freepik">Freepik</a>
+				</div>
+				
+			</div><!-- //ROW -->
+		</div><!-- //CONTAINER -->
+	</footer><!-- //FOOTER -->
+	<script src="https://use.fontawesome.com/8da76d029b.js"></script>
+	
+</div>
+</body>
+</html>
