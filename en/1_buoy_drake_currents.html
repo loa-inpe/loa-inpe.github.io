@@ -68,42 +68,88 @@
 				<div class="container clearfix">
 					
 				
-					<!-- SEARCH FORM -->
-					<div id="search-form" class="pull-right">
-						<form method="get" action="#">
-							<input type="text" name="Search" value="Buscar" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
-						</form>
-					</div><!-- SEARCH FORM -->
+					<!-- LANGUAGE-->
+					<style>
+						.dropbtn {
+						  background-color: #243858;
+						  color: white;
+						  padding: 16px;
+						  font-size: 16px;
+						  border: none;
+						  cursor: pointer;
+						}
+						
+						.dropdown {
+						  position: relative;
+						  display: inline-block;
+						}
+						
+						.dropdown-content {
+						  display: none;
+						  position: absolute;
+						  background-color: #f9f9f9;
+						  min-width: 160px;
+						  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+						  z-index: 1;
+						}
+						
+						.dropdown-content a {
+						  color: black;
+						  padding: 12px 16px;
+						  text-decoration: none;
+						  display: block;
+						}
+						
+						.dropdown-content a:hover {background-color: #f1f1f1}
+						
+						.dropdown:hover .dropdown-content {
+						  display: block;
+						}
+						
+						.dropdown:hover .dropbtn {
+						  background-color: #043c69;
+						} 
+					</style>
+					</head>
+					<body>
+						<div class="dropdown">
+							<button class="dropbtn">Language</button>
+							<div class="dropdown-content">
+							<a href="/en/1_buoy_drake_currents.html">English</a>
+							<a href="/1_buoy_drake_currents.html">Português</a>
+
+							</div>
+						  </div>
 					
 					<!-- MENU -->
 					<div class="pull-right">
 						<nav class="navmenu center">
 							<ul>
 								<li class="first active scroll_btn"><a href="index.html" >Home</a></li>
-								<li class="scroll_btn"><a href="about.html" >Sobre</a></li>
+								<li class="scroll_btn"><a href="about.html" >About</a></li>
 								<li class="sub-menu">
-									<a href="projects.html" >Projetos</a>
+									<a href="projects.html" >Projects</a>
 									<ul>
 										<li><a href="atmos.html" >ATMOS</a></li>
 										<li><a href="interconf.html" >INTERCONF</a></li>
 										<li><a href="inct.html" >INCT da Criosfera</a></li>
-										<li><a href="cdm.html" >Ciências do Mar</a></li>
-										<li><a href="modbio.html" >Modelagem Biofísica</a></li>				
-										<li><a href="goal.html" >GOAL</a></li>		
-										<li><a href="http://dgp.cnpq.br/dgp/espelhogrupo/5350809461630125" >DGP Lattes - CNPq</a></li>							
+										<li><a href="cdm.html" >Marine Science</a></li>
+										<li><a href="modbio.html" >Biophysical Modeling</a></li>	
+										<li><a href="goal.html" >GOAL</a></li>			
+										<li><a href="http://dgp.cnpq.br/dgp/espelhogrupo/5350809461630125" >DGP Lattes - CNPq</a></li>									
 									</ul>
 								<li class="sub-menu">
-									<a href="about.html#team" >Equipe</a>
+									<a href="about.html#team" >Team</a>
 									<ul>
-										<li><a href="about.html#researchers" >Pesquisadores</a></li>
-										<li><a href="about.html#collaborators" >Colaboradores</a></li>										
-										<li><a href="about.html#graduates" >Bolsistas e Pós-graduandos</a></li>	
+										<li><a href="about.html#researchers" >Researchers</a></li>
+										<li><a href="about.html#collaborators" >Collaborators</a></li>										
+										<li><a href="about.html#graduates" >Students</a></li>	
 										<li><a href="alumni.html" >Alumni</a></li>																		
 									</ul>
-								<li class="scroll_btn"><a href="news.html" >Notícias</a></li>
-								<li class="scroll_btn"><a href="publications.html" >Publicações</a></li>
-								<li class="scroll_btn"><a href="clipping.html" >Divulgação</a></li>
-								<li class="scroll_btn"><a href="#contacts" >Contato</a></li>								
+								<li class="scroll_btn"><a href="news.html" >News</a></li>
+								<li class="scroll_btn"><a href="publications.html" >Publications</a></li>
+								<li class="scroll_btn"><a href="clipping.html" >Media</a></li>
+								<li class="scroll_btn"><a href="#contacts" >Contact</a></li>								
 							</ul>
 						</nav>
 					</div><!-- //MENU -->
@@ -145,78 +191,77 @@
 							<div class="single_blog_post_img"><img src="images/banners/banner3.png" alt="" /></div>
 							
 							<div class="single_blog_post_content">
-								<p class="margbot30">O projeto Antarctic Modeling and Observational System (ATMOS), liderado pelo Laboratório 
-									de Estudos do Oceano e da Atmosfera (LOA) do Instituto Nacional de Pesquisas Espaciais (INPE), do Brasil, 
-									visa aprimorar nossa compreensão e modelagem dos processos de interação oceano-atmosfera-ondas no Atlântico
-									 Sudoeste e no setor Atlântico do Oceano Austral. As observações obtidas e os modelos desenvolvidos pelo 
-									 ATMOS não somente visam colaborar com a melhoria nas previsões do tempo e do clima, mas também podem 
-									 oferecer dados críticos necessários para as missões de busca e resgate em locais inóspitos das ilhas 
-									 antárticas. Exemplos recentes de missões de busca e resgate no Oceano Austral incluem o desaparecimento
-									 de uma aeronave chilena na passagem de Drake (12/2019) que teve o apoio da Marinha do Brasil nas buscas, 
-									 assim como o naufrágio de um navio de carga durante uma tempestade perto do Japão (09/2020).
+								<p class="margbot30">The Antarctic Modeling and Observational System (ATMOS) project, 
+									led by the Laboratory for Ocean and Atmosphere Studies (LOA) of the National Institute 
+									for Space Research (INPE) in Brazil, aims to improve our understanding and modeling of 
+									ocean-atmosphere interaction processes -waves in the Southwest Atlantic and the Atlantic 
+									sector of the Southern Ocean. The observations obtained and the models developed by ATMOS 
+									not only aim to contribute to the improvement of weather and climate forecasts, but they can
+									 also provide critical data needed for search and rescue missions in inhospitable places on 
+									 the Antarctic islands. Recent examples of search and rescue missions in the Southern Ocean 
+									 include the disappearance of a Chilean aircraft in the Drake Passage (12/2019) that the 
+									 Brazilian Navy supported in the search, as well as the sinking of a cargo ship during a storm 
+									 near Japan (09/2020).
 								</p>
 								<figure style="text-align: center">
 									<img src="/images/news/buoy2.png" style="max-width:60%;"/>
 									</a>
-									<figcaption style="font-size:80%;">Detalhe da boia Spotter, fabricadas pela Sofar Ocean.<br><br></figcaption>
+									<figcaption style="font-size:80%;">Detail of the Spotter buoy, manufactured by Sofar Ocean. <br><br></figcaption>
 								  </figure>	
 								<p>
-									As operações de busca e resgate dependem criticamente de dados observacionais e de modelos para prever a 
-									localização e o tamanho da área de busca, cujas incertezas aumentam exponencialmente com o tempo. Além do 
-									vento e das correntes, as ondas desempenham um papel crítico na previsão da área de busca, pois as ondas 
-									podem gerar correntes de superfície, também conhecidas como a Deriva de Stokes. Dependendo das propriedades
-									do campo de onda, a Deriva de Stokes pode ser grande. Por exemplo, um campo de ondas que consiste em ondas 
-									de período de 5 segundos com uma altura de onda de 2 metros pode induzir uma corrente de superfície de 
-									cerca de 20 cm/s. Para colocar isso em perspectiva, um objeto exposto a este campo de ondas pode ser 
-									transportado até 1 km em menos de 1,5 horas. Um campo de onda, entretanto, consiste naturalmente em muitos 
-									tipos diferentes de ondas com alturas, períodos e direções de propagação variadas. Assim, em vez de 
-									transportar o material em uma única direção, um coletivo de material pode ser disperso em diferentes 
-									direções. Isso complica significativamente as operações de busca e resgate. Embora a dispersão das ondas 
-									tenha sido estudada em laboratório e, até certo ponto, no campo, pouco ainda se sabe sobre as propriedades 
-									da dispersão das ondas.
+									Search and rescue operations critically rely on observational data and models to predict
+									 the location and size of the search area, whose uncertainties increase exponentially with time. 
+									 In addition to wind and currents, waves play a critical role in forecasting the search area, as 
+									 waves can generate surface currents, also known as Stokes drift. Depending on the wave field 
+									 properties, Stokes Drift can be considerable. For example, a wave field consisting of 5-second 
+									 period waves with a wave height of 2 meters can induce a surface current of about 20 cm/sec. 
+									 To put this in perspective, an object exposed to this wave field can be transported up to 1 km in
+									  less than 1.5 hours. However, a wave field naturally consists of many different types of waves with 
+									  varying heights, periods, and propagation directions. Thus, instead of transporting material in a 
+									  single direction, a material collective can be dispersed in different directions. This significantly 
+									  complicates search and rescue operations. Although wave dispersion has been studied in the laboratory 
+									  and to some extent in the field, little is known about wave dispersion properties.
 								</p>
 								<figure style="text-align: center">
 									<img src="/images/news/buoy3.png" style="max-width:60%;"/>
 									</a>
-									<figcaption style="font-size:80%;">Lançamento das bóias no estreito de Drake, durante OPERANTAR XXXIX. 
-										À deriva para estudo da dispersão das ondas e correntes na região. Foto: cortesia de CF Pimentel.<br><br></figcaption>
+									<figcaption style="font-size:80%;">Launch of buoys in the Drake Straits, during OPERANTAR XXXIX.
+										Adrift to study the dispersion of waves and currents in the region. Photo: courtesy of CF Pimentel. <br><br></figcaption>
 								  </figure>	
 								<p>
-									Para estudar a dispersão das ondas em nossos oceanos, o LOA / INPE (no âmbito do projeto ATMOS) e a 
-									Universidade de Melbourne fizeram uma parceria com a Sofar Ocean. A Sofar Ocean transformou a forma 
-									como observamos o clima marinho através do desenvolvimento de uma vasta rede de Spotters, pequenas 
-									boias de ondas que são lançadas a fim de derivarem nos oceanos do mundo. Com o objetivo de aumentar 
-									os dados do oceano aberto e melhorar a previsão do tempo marinho, os objetivos da Sofar Ocean alinham-se 
-									bem com os do LOA/INPE (ATMOS) e da Universidade de Melbourne. Como parte dessa colaboração, um conjunto 
-									de cinco boias foram lançadas em novembro de 2020 durante a OPERANTAR XXXIX, sobre um mesmo ponto, na 
-									Passagem de Drake, para estudar a dispersão das ondas. 
+									LOA / INPE (under the ATMOS project) and the University of Melbourne have partnered with Sofar Ocean
+									 to study wave dispersion in our oceans. Sofar Ocean has transformed the way we observe marine 
+									 climate by developing a vast network of Spotters, small wave-buoys launched to drift in the world's 
+									 oceans. In order to increase open ocean data and improve marine weather forecasting, Sofar Ocean's 
+									 objectives align well with those of LOA/INPE (ATMOS) and the University of Melbourne. As part of this 
+									 collaboration, a set of five buoys were launched in November 2020 during OPERANTAR XXXIX, 
+									over the same point at the Drake Passage, to study wave dispersion.
 								</p>
 								<figure style="text-align: center">
 									<img src="/images/news/buoy4.jpeg" style="max-width:100%;"/>
 									</a>
-									<figcaption style="font-size:80%;">Detalhe da posição do navio durante o lançamento das boias no Estreito de Drake. Foto: cortesia de CF Pimentel.<br></figcaption>
+									<figcaption style="font-size:80%;">Detail of the ship's position during the launch of the buoys in the Drake Straits. Photo: courtesy of CF Pimentel. <br></figcaption>
 								  <br></figure>	
 								<p>
-									A Passagem de Drake, também conhecida como Estreito de Drake, é a região marítima que divide a 
-									Antártida da parte sul da América do Sul. É também reconhecida como uma das regiões mais perigosas 
-									do globo para a navegação, pois as correntes oceânicas são muito intensas, além de estar frequentemente 
-									sujeita à ação de tempestades, ventos muito intensos que consequentemente podem gerar ondas oceânicas 
-									muito altas, de até 10 metros de altura ou mais.
+									The Drake Passage, also known as the Drake Strait, is the maritime region that divides Antarctica 
+									from the southern part of South America. It is also recognized as one of the most dangerous regions 
+									globally for navigation, as ocean currents are very intense. In addition to being frequently subject
+									to storms, very intense winds can generate very high ocean waves, up to 10 meters high or more.
 								</p>
 								<p>
-									As boias derivantes medem as características das ondas, as localizações geográficas e transmitem seus 
-									dados por satélite em tempo real. Este será um experimento que simula as condições de uma operação de 
-									busca e resgate no mar. Monitoraremos como os derivadores se movem e se dispersam na Passagem de Drake 
-									e nos oceanos vizinhos sob as forças do vento, das ondas e das correntes marinhas. Esperamos que este 
-									experimento nos forneça novos conhecimentos sobre o problema da dispersão das ondas e forneça subsídios 
-									para aprimorar previsões marinhas no futuro. Apesar da pesquisa de campo estar interrompida este ano no 
-									PROANTAR devido ao COVID-19 o lançamento das boias foi realizado através do apoio logístico da Marinha do 
-									Brasil, a partir do Navio Polar Maximiano enquanto o mesmo se dirigiu rumo à Estação Antártica Comandante 
-									Ferraz.
+									Drift buoys measure wave characteristics, geographic locations and transmit their data via satellite
+									 in real-time. This will be an experiment that simulates the conditions of an operation of search
+									  and rescue at sea. We will monitor how drifters move and disperse in the Drake Passage and 
+									  neighboring oceans under the forces of wind, waves, and marine currents. We hope that this 
+									  experiment will provide us with new knowledge about the problem of wave dispersion and provide 
+									  subsidies to improve marine predictions in the future. Despite the fact that field research was 
+									  interrupted this year at PROANTAR due to COVID-19, the launching of the buoys was carried out 
+									  through the logistical support of the Brazilian Navy 
+									from the Maximiano Polar Ship while it headed towards the Comandante Ferraz Antarctic Station.
 								</p>
 								<p>
-									As cinco boias Spotter, fabricadas pela Sofar Ocean, embarcadas no Navio Polar Almirante Maximiano e prontas 
-									para serem transportadas até a Passagem de Drake de onde foram lançadas. (<a href="https://www.sofarocean.com/products/spotter">https://www.sofarocean.com/products/spotter</a>).
+									The five Spotter buoys, manufactured by Sofar Ocean, loaded onto the Polar Ship Admiral Maximiano and 
+									ready to be transported to the Drake Passage from where they were launched.  (<a href="https://www.sofarocean.com/products/spotter">https://www.sofarocean.com/products/spotter</a>).
 								</p>
 
 							</div>
@@ -228,8 +273,8 @@
 						<div class="single_blog_post_tags margbot50" data-animated="fadeInUp">
 							<ul>
 								<li><a href="javascript:void(0);" >ATMOS</a></li>
-								<li><a href="javascript:void(0);" >Oceanografia</a></li>
-								<li><a href="javascript:void(0);" >Meteorologia</a></li>								
+								<li><a href="javascript:void(0);" >Oceanography</a></li>
+								<li><a href="javascript:void(0);" >Meteorology</a></li>								
 							</ul>
 						</div><!-- //SINGLE BLOG POST TAG -->
 
@@ -297,12 +342,12 @@
 						
 						<!-- POPULAR TAGS WIDGET -->
 						<div class="sidepanel widget_tags">
-							<h3><b>Tags</b> Populares</h3>
+							<h3><b>Popular</b> Tags</h3>
 							<ul>
-								<li><a href="javascript:void(0);" >Ciência</a></li>
-								<li><a href="javascript:void(0);" >Oceanografia</a></li>
-								<li><a href="javascript:void(0);" >Meteorologia</a></li>
-								<li><a href="javascript:void(0);" >Modelagem Numérica</a></li>
+								<li><a href="javascript:void(0);" >Science</a></li>
+								<li><a href="javascript:void(0);" >Oceanography</a></li>
+								<li><a href="javascript:void(0);" >Meteorology</a></li>
+								<li><a href="javascript:void(0);" >Numerical Modeling</a></li>
 							</ul>
 						</div><!-- POPULAR TAGS WIDGET -->
 						
@@ -328,9 +373,9 @@
 			<!-- ROW -->
 			<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
 				
-				<div class="col-lg-4 col-md-4 col-sm-6 padbot30">
-					<h4><b>Redes</b> sociais</h4>
-					<p>Visite nossa página para conhecer o nosso trabalho, atividades de pesquisa e a equipe do Laboratório de Estudos do Oceano e da Atmosfera.
+				<div class="col-lg-4 col-md-4 col-sm-6 padbot30 foot_about_block">
+					<h4><b>Social</b> networks</h4>
+					<p>Visit our page to learn about our work, research activities, and the staff at the Ocean and Atmosphere Studies Laboratory. 
 					</p>
 					<ul class="social">
 						<li><a href="https://www.facebook.com/loainpe" ><i class="fa fa-facebook"></i></a></li>
@@ -338,34 +383,31 @@
 					</ul>
 				</div>
 				
-				<div class="col-lg-4 col-md-4 col-sm-6 padbot30">
-				</div>
-				
 				<div class="respond_clear"></div>
 				
 				<div class="col-lg-4 col-md-4 padbot30">
-					<h4><b>Entre em</b> contato</h4>
+					<h4><b>Contact</b> us</h4>
 					
 					<!-- CONTACT FORM -->
 					<div class="span9 contact_form">
 						<div id="note"></div>
 						<div id="fields">
 							<form method="POST" action="https://formspree.io/xpvpnoax" id="contact-form-face" class="clearfix" action="#">
-								<input type="text" name="name" value="Nome" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
-								<textarea name="message" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Mensagem';">Messagem</textarea>
-								<input class="contact_btn" type="submit" value="Enviar" />
+								<input type="text" name="name" value="Name" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+								<textarea name="message" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';">Message</textarea>
+								<input class="contact_btn" type="submit" value="Send" />
 							</form>
 						</div>
 					</div><!-- //CONTACT FORM -->
 				</div>
 				<div id="copyright" style="text-align: center;">
-					&copy; LOA/INPE. All rights reserved. | Template design by: <a href="https://github.com/toidicode">toidicode</a> | Edited by:  <a href="https://www.uesleisutil.com.br">Ueslei Adriano Sutil</a> | Favicon by  <a href="https://www.flaticon.com/authors/freepik">Freepik</a>.
+					&copy; LOA/INPE. All rights reserved. | Template design by: <a href="https://github.com/toidicode">toidicode</a> | Edited by:  <a href="https://www.uesleisutil.com.br">Ueslei Adriano Sutil</a> | Favicon by  <a href="https://www.flaticon.com/authors/freepik">Freepik</a>
 				</div>
+				
 			</div><!-- //ROW -->
 		</div><!-- //CONTAINER -->
 	</footer><!-- //FOOTER -->
-	<script src="https://use.fontawesome.com/8da76d029b.js"></script>	<script src="https://use.fontawesome.com/8da76d029b.js"></script>
-	
+	<script src="https://use.fontawesome.com/8da76d029b.js"></script>
 	
 </div>
 </body>
