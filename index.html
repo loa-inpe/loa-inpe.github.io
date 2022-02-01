@@ -3,7 +3,7 @@
 <head>
 	
 	<meta charset="utf-8">
-	<title>Laboratório de Estudos do Oceano e da Atmosfera</title>
+	<title>Ocean and Atmosphere Studies Laboratory</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -111,8 +111,62 @@
 						<form id="search-form" class="pull-right">
 							<input type="text" name="Search" value="Buscar" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
 						</form> 
-					</div> --> <!-- SEARCH FORM --><!-- LANGUAGE-->
-					
+					</div> --> <!-- SEARCH FORM -->
+
+
+					<!-- LANGUAGE-->
+					<style>
+						.dropbtn {
+						  background-color: #243858;
+						  color: white;
+						  padding: 16px;
+						  font-size: 16px;
+						  border: none;
+						  cursor: pointer;
+						}
+						
+						.dropdown {
+						  position: relative;
+						  display: inline-block;
+						}
+						
+						.dropdown-content {
+						  display: none;
+						  position: absolute;
+						  background-color: #f9f9f9;
+						  min-width: 160px;
+						  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+						  z-index: 1;
+						}
+						
+						.dropdown-content a {
+						  color: black;
+						  padding: 12px 16px;
+						  text-decoration: none;
+						  display: block;
+						}
+						
+						.dropdown-content a:hover {background-color: #f1f1f1}
+						
+						.dropdown:hover .dropdown-content {
+						  display: block;
+						}
+						
+						.dropdown:hover .dropbtn {
+						  background-color: #043c69;
+						} 
+					</style>
+					</head>
+					<body>
+						<div class="dropdown">
+							<button class="dropbtn">Language</button>
+							<div class="dropdown-content">
+							<a href="/en/">English</a>
+							<a href="/">Português</a>
+
+							</div>
+						  </div>
+
 
 
 					<!-- <div class="dropdown-container language-menu">
@@ -129,36 +183,37 @@
 
 						</ul>
 					  </div>  -->
+					  
 					
 					<!-- MENU -->
 					<div class="pull-right">
 						<nav class="navmenu center">
 							<ul>
 								<li class="first active scroll_btn"><a href="index.html" >Home</a></li>
-								<li class="scroll_btn"><a href="about.html" >Sobre</a></li>
+								<li class="scroll_btn"><a href="about.html" >About</a></li>
 								<li class="sub-menu">
-									<a href="projects.html" >Projetos</a>
+									<a href="projects.html" >Projects</a>
 									<ul>
 										<li><a href="atmos.html" >ATMOS</a></li>
 										<li><a href="interconf.html" >INTERCONF</a></li>
 										<li><a href="inct.html" >INCT da Criosfera</a></li>
-										<li><a href="cdm.html" >Ciências do Mar</a></li>
-										<li><a href="modbio.html" >Modelagem Biofísica</a></li>	
+										<li><a href="cdm.html" >Marine Science</a></li>
+										<li><a href="modbio.html" >Biophysical Modeling</a></li>	
 										<li><a href="goal.html" >GOAL</a></li>			
 										<li><a href="http://dgp.cnpq.br/dgp/espelhogrupo/5350809461630125" >DGP Lattes - CNPq</a></li>									
 									</ul>
 								<li class="sub-menu">
-									<a href="about.html#team" >Equipe</a>
+									<a href="about.html#team" >Team</a>
 									<ul>
-										<li><a href="about.html#researchers" >Pesquisadores</a></li>
-										<li><a href="about.html#collaborators" >Colaboradores</a></li>										
-										<li><a href="about.html#graduates" >Bolsistas e Pós-graduandos</a></li>	
+										<li><a href="about.html#researchers" >Researchers</a></li>
+										<li><a href="about.html#collaborators" >Collaborators</a></li>										
+										<li><a href="about.html#graduates" >Students</a></li>	
 										<li><a href="alumni.html" >Alumni</a></li>																		
 									</ul>
-								<li class="scroll_btn"><a href="news.html" >Notícias</a></li>
-								<li class="scroll_btn"><a href="publications.html" >Publicações</a></li>
-								<li class="scroll_btn"><a href="clipping.html" >Divulgação</a></li>
-								<li class="scroll_btn"><a href="#contacts" >Contato</a></li>								
+								<li class="scroll_btn"><a href="news.html" >News</a></li>
+								<li class="scroll_btn"><a href="publications.html" >Publications</a></li>
+								<li class="scroll_btn"><a href="clipping.html" >Media</a></li>
+								<li class="scroll_btn"><a href="#contacts" >Contact</a></li>								
 							</ul>
 						</nav>
 					</div><!-- //MENU -->
@@ -176,29 +231,29 @@
 					<li class="slide1">
 						<div class="flex_caption1">
 							<b><p class="title1 captionDelay2 FromTop">LOA - INPE</p>
-							<p class="title4 captionDelay7 FromBottom">Laboratório de Estudos do Oceano e da Atmosfera</p>
-							<p class="title4 captionDelay7 FromBottom">Divisão de Observação da Terra e Geoinformática</p>
-							<p class="title4 captionDelay7 FromBottom">Coordenação-Geral de Ciências da Terra </p>
-							<p class="title4 captionDelay7 FromBottom">Instituto Nacional de Pesquisas Espaciais</p>							
+							<p class="title4 captionDelay7 FromBottom">Ocean and Atmosphere Studies Laboratory</p>
+							<p class="title4 captionDelay7 FromBottom">Earth Observation and Geoinformatics Division</p>
+							<p class="title4 captionDelay7 FromBottom">Earth Observation Coordination (OBT/INPE) </p>
+							<p class="title4 captionDelay7 FromBottom">National Institute for Space Research</p>							
 						</div>
-						<a class="slide_btn FromRight" href="about.html" >Saiba mais</a>
+						<a class="slide_btn FromRight" href="about.html" >More</a>
 					<li class="slide2">
 						<div class="flex_caption1">
 							<p class="title1 captionDelay2 FromTop">LOA - INPE</p>
-							<p class="title4 captionDelay7 FromBottom">Laboratório de Estudos do Oceano e da Atmosfera</p>
-							<p class="title4 captionDelay7 FromBottom">Divisão de Observação da Terra e Geoinformática</p>
-							<p class="title4 captionDelay7 FromBottom">Coordenação-Geral de Ciências da Terra</p>	
-							<p class="title4 captionDelay7 FromBottom">Instituto Nacional de Pesquisas Espaciais</p>						</div>
-						<a class="slide_btn FromRight" href="about.html" >Saiba mais</a>
+							<p class="title4 captionDelay7 FromBottom">Ocean and Atmosphere Studies Laboratory</p>
+							<p class="title4 captionDelay7 FromBottom">Earth Observation and Geoinformatics Division</p>
+							<p class="title4 captionDelay7 FromBottom">Earth Observation Coordination (OBT/INPE)</p>	
+							<p class="title4 captionDelay7 FromBottom">National Institute for Space Research</p>						</div>
+						<a class="slide_btn FromRight" href="about.html" >More</a>
 					</li>
 					<li class="slide3">
 						<div class="flex_caption1">
 							<p class="title1 captionDelay2 FromTop">LOA - INPE</p>
-							<p class="title4 captionDelay7 FromBottom">Laboratório de Estudos do Oceano e da Atmosfera</p>
-							<p class="title4 captionDelay7 FromBottom">Divisão de Observação da Terra e Geoinformática</p>
-							<p class="title4 captionDelay7 FromBottom">Coordenação-Geral de Ciências da Terra</p>	
-							<p class="title4 captionDelay7 FromBottom">Instituto Nacional de Pesquisas Espaciais</p>						</div>
-						<a class="slide_btn FromRight" href="about.html" >Saiba mais</a></b>
+							<p class="title4 captionDelay7 FromBottom">Ocean and Atmosphere Studies Laboratory</p>
+							<p class="title4 captionDelay7 FromBottom">Earth Observation and Geoinformatics Division</p>
+							<p class="title4 captionDelay7 FromBottom">Earth Observation Coordination (OBT/INPE)</p>	
+							<p class="title4 captionDelay7 FromBottom">National Institute for Space Research</p>						</div>
+						<a class="slide_btn FromRight" href="about.html" >More</a></b>
 						
 					</li>
 				</ul>
@@ -230,13 +285,11 @@
 					<div class="row">
 					
 						<div class="col-lg-7 col-md-7 col-sm-7" data-appear-top-offset="-200" data-animated="fadeInLeft">
-							<h2><b>Laboratório de Estudos do Oceano e da Atmosfera</b></h2>
-							<p>O Laboratório de Estudos do Oceano e da Atmosfera (LOA), do Instituto
-								Nacional de Pesquisas Espaciais (INPE), faz parte da Divisão de Observação da Terra e Geoinformática 
-								(DIOTG), vinculada à Coordenação-Geral de Ciências da Terra (CGCT) e está focado no estudo da 
-								física do oceano e atmosfera e da interação entre estes dois meios, 
-								além da modelagem biofísica</p>
-							<a class="btn" href="about.html" >Saiba mais</a>
+							<h2><b>Ocean and Atmosphere Studies Laboratory</b></h2>
+							<p>The Ocean and Atmosphere Studies Laboratory (LOA), of the National Institute for Space Research (INPE), is part of the Earth Observation and Geoinformatics Division 
+								(DIOTG), linked to the Earth Observation Coordination (OBT/INPE) (CGCT) and is focused on the study of the ocean and atmosphere physics
+								and the interaction between these two media, in addition to Biophysical Modeling.</p>
+							<a class="btn" href="about.html" >More</a>
 						</div>
 						
 						<div class="col-lg-5 col-md-5 col-sm-5 ipad_img_in" data-appear-top-offset="-200" data-animated="fadeInRight">
@@ -251,7 +304,7 @@
 		
 				<!-- CONTAINER -->
 				<div class="container">
-						<h2><b>Últimas Notícias</b></h2>
+						<h2><b>Last News</b></h2>
 
 
 					<!-- RECENT POSTS -->
@@ -263,7 +316,7 @@
 									<a class="link" href="atmos_boias_2021.html" ></a>
 								</div>
 								<div class="post_item_content">
-									<a class="title" href="atmos_boias_2021.html">Dados oceanográficos em tempo real - Parceria ATMOS e REMObs</a>
+									<a class="title" href="atmos_boias_2021.html">Real-time oceanographic data - ATMOS and REMObs partnership </a>
 									<ul class="post_item_inf">
 									</ul>
 								</div>
@@ -277,7 +330,7 @@
 									<a class="link" href="portosemercados.html" ></a>
 								</div>
 								<div class="post_item_content">
-									<a class="title" href="portosemercados.html">Manchete na Revista Portos e Mercados: "A bordo do "Tio Max", muita ciência e pesquisa"</a>
+									<a class="title" href="portosemercados.html">Headline in Portos e Mercados Magazine: "Aboard the "Uncle Max", a lot of science and research" </a>
 									<ul class="post_item_inf">
 									</ul>
 								</div>
@@ -291,7 +344,7 @@
 									<a class="link" href="OP_XL.html" ></a>
 								</div>
 								<div class="post_item_content">
-									<a class="title" href="OP_XL.html">LOA na Operação Antártica Brasileira XL</a>
+									<a class="title" href="OP_XL.html">LOA in the Brazilian Antarctic Operation XL </a>
 									<ul class="post_item_inf">
 									</ul>
 								</div>
@@ -311,7 +364,7 @@
 			<div class="container">
 				<!-- ROW -->
 				<div class="projects-wrapper" data-appear-top-offset="-150" data-animated="fadeInUp">
-					<h2><b>Projetos</b></h2>
+					<h2><b>Projects</b></h2>
 					
 					<!-- TEAM SLIDER -->
 					<div class="owl-demo owl-carousel projects_slider ">
@@ -369,7 +422,7 @@
 								</div>
 								<div class="work_description center">
 									<div class="work_descr_cont">
-										<p>Ciências do Mar</p>
+										<p>Marine Science</p>
 									</div>
 								</div>
 							</div>
@@ -384,7 +437,7 @@
 								</div>
 								<div class="work_description center">
 									<div class="work_descr_cont">
-										<p>Modelagem Biofísica</p></a>
+										<p>Biophysical Modeling</p></a>
 
 									</div>
 								</div>
@@ -400,7 +453,7 @@
 								<div class="work_description center">
 									<div class="work_descr_cont">
 										<p>GOAL</p></a>
-										<span>Grupo de Oceanografia de Altas Latitudes</span>
+										<span>High Latitude Oceanography Group</span>
 									</div>
 								</div>
 							</div>
@@ -415,7 +468,7 @@
 								<div class="work_description center">
 									<div class="work_descr_cont">
 										<p>DGP Lattes - CNPq</p></a>
-										<span>Diretório dos Grupos de Pesquisas no Brasil - Lattes</span>
+										<span>Directory of Research Groups in Brazil - Lattes</span>
 									</div>
 								</div>
 							</div>
@@ -432,7 +485,7 @@
 			<div class="container">
 				<!-- ROW -->
 				<div class="projects-wrapper" data-appear-top-offset="-150" data-animated="fadeInUp">
-					<h2><b>Equipe</b></h2><a class="btn" href="about.html#researchers" >Conheça a equipe</a>
+					<h2><b>Team</b></h2><a class="btn" href="about.html#researchers" >Meet the team</a>
 					
 					<!-- TEAM SLIDER -->
 					<div class="owl-demo owl-carousel projects_slider">
@@ -445,8 +498,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>Dr. Luciano Ponzi Pezzi</p>
-										<span>Professor Titular</span><p></p>
-										<span>Meteorologista</span>
+										<span>Researcher</span><p></p>
+										<span>Meteorologist</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -466,8 +519,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>Dr. Douglas Francisco Marcolino Gherardi</p>
-										<span>Pesquisador</span><p></p>
-										<span>Oceanógrafo</span>
+										<span>Researcher</span><p></p>
+										<span>Oceanographer</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -486,8 +539,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>Dr. Ronald Buss de Souza</p>
-										<span>Pesquisador Sênior</span><p></p>
-										<span>Oceanógrafo</span>
+										<span> Senior Researcher</span><p></p>
+										<span>Oceanographer</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -506,8 +559,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>Dr. João A. Lorenzzetti</p>
-										<span>Pesquisador Titular</span><p></p>
-										<span>Oceanógrafo</span>
+										<span>Researcher</span><p></p>
+										<span>Physicist</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -525,8 +578,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>Dr. Jonas Takeo Carvalho</p>
-										<span>Pós-doutorando e pesquisador</span><p></p>
-										<span>Oceanógrafo</span>
+										<span>Postdoctoral Student and Researcher</span><p></p>
+										<span>Oceanographer</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -546,8 +599,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>Dr. Marcelo Freitas Santini</p>
-										<span>Pós-doutorando e pesquisador</span><p></p>
-										<span>Meteorologista</span>
+										<span>Postdoctoral Student and Researcher</span><p></p>
+										<span>Meteorologist</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -567,8 +620,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>Dra. Claudia Klose Parise</p>
-										<span>Colaboradora</span><p></p>
-										<span>Oceanógrafa</span>
+										<span>Collaborator</span><p></p>
+										<span>Oceanographer</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -588,8 +641,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>Dr. Leonardo Nascimento Lima</p>
-										<span>Colaborador</span><p></p>
-										<span>Oceanógrafo</span>
+										<span>Collaborator</span><p></p>
+										<span>Oceanographer</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -607,8 +660,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>Dr. Maurício Magalhães Mata</p>
-										<span>Colaborador</span><p></p>
-										<span>Oceanógrafo</span>
+										<span>Collaborator</span><p></p>
+										<span>Oceanographer</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -626,8 +679,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>Dr. Mário Fracisco Leal de Quadro</p>
-										<span>Colaborador</span><p></p>
-										<span>Meteorologista</span>
+										<span>Collaborator</span><p></p>
+										<span>Meteorologist</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -644,8 +697,8 @@
 									<div class="crewman_descr center">
 										<div class="crewman_descr_cont">
 											<p>Dr. José Antonio Aravéquia</p>
-											<span>Colaborador</span><p></p>
-											<span>Físico</span>
+											<span>Collaborator</span><p></p>
+											<span>Physicist</span>
 										</div>
 									</div>
 									<div class="crewman_social">
@@ -665,8 +718,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>Dr. Ricardo de Camargo</p>
-										<span>Colaborador</span><p></p>
-										<span>Físico</span>
+										<span>Collaborator</span><p></p>
+										<span>Physicist</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -687,8 +740,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>MSc. Celina C. F. Rodrigues</p>
-										<span>Doutoranda</span><p></p>
-										<span>Engenheira Ambiental</span>
+										<span>Ph.D. Student</span><p></p>
+										<span>Environmental Engineer</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -707,8 +760,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>MSc. Dayanis Monteiro</p>
-										<span>Doutoranda</span><p></p>
-										<span>Meteorologista</span>
+										<span>Ph.D. Student</span><p></p>
+										<span>Meteorologist</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -724,8 +777,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>MSc. Diogo Machado Custodio</p>
-										<span>Doutorando</span><p></p>
-										<span>Meteorologista</span>
+										<span>Ph.D. Student</span><p></p>
+										<span>Meteorologist</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -746,8 +799,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>MSc. Luciana Shigihara Lima</p>
-										<span>Doutoranda</span><p></p>
-										<span>Engenheira Hídrica</span>
+										<span>Ph.D. Student</span><p></p>
+										<span>Water Ressources Engineer</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -767,8 +820,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>MSc. Mylene Jaen Cabrera</p>
-										<span>Doutoranda</span><p></p>
-										<span>Meteorologista</span>
+										<span>Ph.D. Student</span><p></p>
+										<span>Meteorologist</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -777,26 +830,6 @@
 							</div>
 						</div><!-- crewman13 -->
 
-						
-						<!-- crewman15 -->
-						<div class="item">
-							<div class="crewman_item">
-								<div class="crewman">
-									<img src="images/team/lorena.jpg" alt="" />
-								</div>
-								<div class="crewman_descr center">
-									<div class="crewman_descr_cont">
-										<p>Lorena de M. J. Gomes</p>
-										<span>Mestranda</span><p></p>
-										<span>Engenheira Ambiental</span>
-									</div>
-								</div>
-								<div class="crewman_social">
-								</div>
-							</div>
-						</div><!-- crewman15 -->
-
-						
 						<!-- crewman17 -->
 						<div class="item">
 							<div class="crewman_item">
@@ -806,8 +839,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>Msc. Heitor Augusto de Moraes Tozzi</p>
-										<span>Doutorando</span><p></p>
-										<span>Oceanólogo</span>
+										<span>Ph.D. Student</span><p></p>
+										<span>Oceanographer</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -815,6 +848,25 @@
 								</div>
 							</div>
 						</div><!-- crewman17 -->
+
+						<!-- crewman15 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/lorena.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Lorena de M. J. Gomes</p>
+										<span>M.Sc. Student</span><p></p>
+										<span>Environmental Engineer</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+								</div>
+							</div>
+						</div><!-- crewman15 -->
+
 
 						<!-- crewman17 -->
 						<div class="item">
@@ -825,8 +877,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>Emily Aimée Alves Carnaúba</p>
-										<span>Mestranda</span><p></p>
-										<span>Cientista Ambiental</span>
+										<span>M.Sc. Student</span><p></p>
+										<span>Environmental Scientist</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -844,8 +896,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>Gabrielle Tavares de Carvalho</p>
-										<span>Mestranda</span><p></p>
-										<span>Cientista Ambiental</span>
+										<span>M.Sc. Student</span><p></p>
+										<span>Environmental Scientist</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -863,8 +915,8 @@
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>Taina Costa Maia</p>
-										<span>Mestranda</span><p></p>
-										<span>Oceanógrafa</span>
+										<span>M.Sc. Student</span><p></p>
+										<span>Oceanographer</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -872,18 +924,17 @@
 								</div>
 							</div>
 						</div><!-- crewman17 -->
-						
 						<!-- crewman17 -->
 						<div class="item">
 							<div class="crewman_item">
 								<div class="crewman">
-									<img src="images/team/evandro.jpeg" alt="" />
+									<img src="images/team/evandro.png" alt="" />
 								</div>
 								<div class="crewman_descr center">
 									<div class="crewman_descr_cont">
 										<p>Evandro Oscar Mafra</p>
-										<span>Doutorando</span><p></p>
-										<span>Biólogo</span>
+										<span>Ph. D. Student</span><p></p>
+										<span>Biologist</span>
 									</div>
 								</div>
 								<div class="crewman_social">
@@ -914,13 +965,13 @@
 			<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
 				
 				<div class="col-lg-4 col-md-4 col-sm-6 padbot30">
-					<h4><b>Últimas</b> notícias</h4>
+					<h4><b>Last</b> News</h4>
 					<div class="recent_posts_small clearfix">
 						<div class="post_item_img_small">
 							<img src="images/news/torre_OP_XL.jpeg" alt="" />
 						</div>
 						<div class="post_item_content_small">
-							<a class="title" href="OP_XL.html" >LOA na Operação Antártica Brasileira XL</a>
+							<a class="title" href="OP_XL.html" >LOA in the Brazilian Antarctic Operation XL</a>
 							<ul class="post_item_inf_small">
 								<li>16 Novembro 2021</li>
 							</ul>
@@ -932,10 +983,10 @@
 							<img src="images/news/eddies.jpg" alt="" />
 						</div>
 						<div class="post_item_content_small">
-							<a class="title" href="artigo_eddies.html" >Nova produção científica:
+							<a class="title" href="artigo_eddies.html" >New scientific production:
 								 "Air-Sea Interactions over Eddies in the Brazil-Malvinas Confluence"</a>
 							<ul class="post_item_inf_small">
-								<li>10 Maio 2021</li>
+								<li>10 May 2021</li>
 							</ul>
 						</div>
 					</div>
@@ -945,10 +996,10 @@
 							<img src="images/banners/banner5.png" alt="" />
 						</div>
 						<div class="post_item_content_small">
-							<a class="title" href="artigo_wave.html" >Nova produção científica do Projeto ATMOS, liderado pelo LOA: "Wave
+							<a class="title" href="artigo_wave.html" >New scientific production of ATMOS Project, led by LOA: "Wave
 								Anomaly Detection in Wave Measurements"</a>
 							<ul class="post_item_inf_small">
-								<li>05 Março 2021</li>
+								<li>05 March 2021</li>
 							</ul>
 						</div>
 					</div>
@@ -957,10 +1008,9 @@
 							<img src="images/banners/banner4.png" alt="" />
 						</div>
 						<div class="post_item_content_small">
-							<a class="title" href="2_paper_cbm_rmets.html" >LOA/INPE publica artigo sobre as comparações dos fluxos de calor na 
-								CBM e Plataforma Sul Continental Brasileira</a>
+							<a class="title" href="2_paper_cbm_rmets.html" >LOA/INPE publishes an article on the comparisons of heat fluxes in the CBM and the Brazilian Southern Continental Shelf</a>
 							<ul class="post_item_inf_small">
-								<li>22 Janeiro 2021</li>
+								<li>22 January 2021</li>
 							</ul>
 						</div>
 					</div>
@@ -969,18 +1019,18 @@
 							<img src="images/banners/banner3.png" alt="" />
 						</div>
 						<div class="post_item_content_small">
-							<a class="title" href="1_buoy_drake_currents.html" >Cinco boias lançadas pelo LOA/INPE na Passagem de Drake para 
-								estudar a dispersão de ondas e correntes</a>
+							<a class="title" href="1_buoy_drake_currents.html" >Five buoys launched by LOA/INPE at the Drake Passage to study 
+								the dispersion of waves and currents </a>
 							<ul class="post_item_inf_small">
-								<li>16 Dezembro 2020</li>
+								<li>16 December 2020</li>
 							</ul>
 						</div>
 					</div>
 				</div>
 				
 				<div class="col-lg-4 col-md-4 col-sm-6 padbot30 foot_about_block">
-					<h4><b>Redes</b> sociais</h4>
-					<p>Visite nossa página para conhecer o nosso trabalho, atividades de pesquisa e a equipe do Laboratório de Estudos do Oceano e da Atmosfera.
+					<h4><b>Social</b> networks</h4>
+					<p>Visit our page to learn about our work, research activities, and the staff at the Ocean and Atmosphere Studies Laboratory. 
 					</p>
 					<ul class="social">
 						<li><a href="https://www.facebook.com/loainpe" ><i class="fa fa-facebook"></i></a></li>
@@ -991,16 +1041,16 @@
 				<div class="respond_clear"></div>
 				
 				<div class="col-lg-4 col-md-4 padbot30">
-					<h4><b>Entre em</b> contato</h4>
+					<h4><b>Contact</b> us</h4>
 					
 					<!-- CONTACT FORM -->
 					<div class="span9 contact_form">
 						<div id="note"></div>
 						<div id="fields">
 							<form method="POST" action="https://formspree.io/xpvpnoax" id="contact-form-face" class="clearfix" action="#">
-								<input type="text" name="name" value="Nome" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
-								<textarea name="message" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Mensagem';">Messagem</textarea>
-								<input class="contact_btn" type="submit" value="Enviar" />
+								<input type="text" name="name" value="Name" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+								<textarea name="message" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';">Message</textarea>
+								<input class="contact_btn" type="submit" value="Send" />
 							</form>
 						</div>
 					</div><!-- //CONTACT FORM -->
