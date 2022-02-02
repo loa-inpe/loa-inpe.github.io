@@ -112,7 +112,58 @@
 							<input type="text" name="Search" value="Buscar" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
 						</form> 
 					</div> --> <!-- SEARCH FORM --><!-- LANGUAGE-->
-					
+					<style>
+						.dropbtn {
+						  background-color: #243858;
+						  color: white;
+						  padding: 16px;
+						  font-size: 16px;
+						  border: none;
+						  cursor: pointer;
+						}
+						
+						.dropdown {
+						  position: relative;
+						  display: inline-block;
+						}
+						
+						.dropdown-content {
+						  display: none;
+						  position: absolute;
+						  background-color: #f9f9f9;
+						  min-width: 160px;
+						  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+						  z-index: 1;
+						}
+						
+						.dropdown-content a {
+						  color: black;
+						  padding: 12px 16px;
+						  text-decoration: none;
+						  display: block;
+						}
+						
+						.dropdown-content a:hover {background-color: #f1f1f1}
+						
+						.dropdown:hover .dropdown-content {
+						  display: block;
+						}
+						
+						.dropdown:hover .dropbtn {
+						  background-color: #043c69;
+						} 
+					</style>
+					</head>
+					<body>
+						<div class="dropdown">
+							<button class="dropbtn">Idioma</button>
+							<div class="dropdown-content">
+							<a href="/en/">English</a>
+							<a href="/">Português</a>
+
+							</div>
+						  </div>
+
 
 
 					<!-- <div class="dropdown-container language-menu">
@@ -869,25 +920,6 @@
 								</div>
 								<div class="crewman_social">
 									<a href="http://lattes.cnpq.br/4583179306794404" ><i class="ai ai-lattes"></i></a>
-								</div>
-							</div>
-						</div><!-- crewman17 -->
-						
-						<!-- crewman17 -->
-						<div class="item">
-							<div class="crewman_item">
-								<div class="crewman">
-									<img src="images/team/evandro.png" alt="" />
-								</div>
-								<div class="crewman_descr center">
-									<div class="crewman_descr_cont">
-										<p>Evandro Oscar Mafra</p>
-										<span>Doutorando</span><p></p>
-										<span>Biólogo</span>
-									</div>
-								</div>
-								<div class="crewman_social">
-									<a href="http://lattes.cnpq.br/4209599887961308" ><i class="ai ai-lattes"></i></a>
 								</div>
 							</div>
 						</div><!-- crewman17 -->
